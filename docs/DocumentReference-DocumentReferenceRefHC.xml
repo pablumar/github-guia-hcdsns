@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="DocumentReferenceRefHC"/>
+  <meta>
+    <profile value="https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refHC-sns"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference DocumentReferenceRefHC</b></p><a name="DocumentReferenceRefHC"> </a><a name="hcDocumentReferenceRefHC"> </a><a name="DocumentReferenceRefHC-en-US"> </a><p><b>masterIdentifier</b>: <code>http://example.org</code>/ba91c64b-f30c-4137-a484-34bbba5e8804</p><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.2.9.2.120.4.4</code>/c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju</p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11502-2}">Laboratory report</span></p><p><b>category</b>: <span title="Codes:{http://loinc.org 18719-5}">Chemistry studies (set)</span></p><p><b>subject</b>: Identifier: <code>2.16.724.4.40</code>/BBBBBBBBBB009931</p><p><b>date</b>: 2022-03-30 11:24:26+0100</p><p><b>custodian</b>: Identifier: <code>www.example.org</code>/210601</p><p><b>description</b>: Informe Prueba Laboratorio</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Language</b></td></tr><tr><td style="display: none">*</td><td>application/fhir+json</td><td>Spanish</td></tr></table></blockquote></div>
+  </text>
+  <masterIdentifier>
+    <system value="http://example.org"/>
+    <value value="ba91c64b-f30c-4137-a484-34bbba5e8804"/>
+  </masterIdentifier>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.9.2.120.4.4"/>
+    <value value="c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju"/>
+  </identifier>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11502-2"/>
+      <display value="Laboratory report"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18719-5"/>
+      <display value="Chemistry studies (set)"/>
+    </coding>
+  </category>
+  <subject>
+    <identifier>
+      <system value="2.16.724.4.40"/>
+      <value value="BBBBBBBBBB009931"/>
+    </identifier>
+  </subject>
+  <date value="2022-03-30T11:24:26+01:00"/>
+  <custodian>
+    <identifier>
+      <system value="www.example.org"/>
+      <value value="210601"/>
+    </identifier>
+  </custodian>
+  <description value="Informe Prueba Laboratorio"/>
+  <content>
+    <attachment>
+      <contentType value="application/fhir+json"/>
+      <language value="es"/>
+    </attachment>
+  </content>
+</DocumentReference>

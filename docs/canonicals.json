@@ -1,0 +1,58 @@
+[
+  {
+    "id" : "hcdsns.sns.implementationGuide",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example",
+    "version" : "1.0.0",
+    "name" : "HistoriaClinicaDigitalIG"
+  },
+  {
+    "id" : "DocumentReference-minimal-sns",
+    "type" : "StructureDefinition",
+    "url" : "https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns",
+    "version" : "1.0.0",
+    "name" : "DocumentReferenceMinimalSNS"
+  },
+  {
+    "id" : "DocumentReference-refHC-sns",
+    "type" : "StructureDefinition",
+    "url" : "https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refHC-sns",
+    "version" : "1.0.0",
+    "name" : "DocumentReferenceRefHCSNS"
+  },
+  {
+    "id" : "DocumentReference-refInf-sns",
+    "type" : "StructureDefinition",
+    "url" : "https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns",
+    "version" : "1.0.0",
+    "name" : "DocumentReferenceRefInfSNS"
+  },
+  {
+    "id" : "PatientMinimalSNS",
+    "type" : "StructureDefinition",
+    "url" : "https://sns.gob.es/fhir/hcdsns/StructureDefinition/PatientMinimalSNS",
+    "version" : "1.0.0",
+    "name" : "PatientMinimalSNS"
+  },
+  {
+    "id" : "num-ref-incorrectas",
+    "type" : "StructureDefinition",
+    "url" : "https://sns.gob.es/fhir/hcdsns/StructureDefinition/num-ref-incorrectas",
+    "version" : "1.0.0",
+    "name" : "NumRefIncorrectas"
+  },
+  {
+    "id" : "patient-flag-oculto",
+    "type" : "StructureDefinition",
+    "url" : "https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-flag-oculto",
+    "version" : "1.0.0",
+    "name" : "FlagOculto"
+  },
+  {
+    "id" : "patient-operacion",
+    "type" : "StructureDefinition",
+    "url" : "https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-operacion",
+    "version" : "1.0.0",
+    "name" : "Operacion"
+  }
+]

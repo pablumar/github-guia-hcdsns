@@ -1,0 +1,827 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 47, errors = 26, warn = 25, info = 23-->
+<head>
+  <title>HistoriaClinicaDigitalIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for HistoriaClinicaDigitalIG</h1>
+ <p>Generated Wed Feb 19 13:31:09 CET 2025, FHIR version 4.0.1 for hcdsns.sns.implementationGuide#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.8.7, which is out of date. The current version is v1.8.13 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hcdsns.sns.implementationGuide, Canonical = http://example.com/fhir/example</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>History Page 'history.html' is wrong (ig.json#paths/history) - must be 'http://example.com/fhir/example/history.html' <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hcdsns.sns.implementationGuide</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.com/fhir/example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.2.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: LocalTemplate#0.0.1 -&gt; fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><ul><li><a href="http://build.fhir.org/diagnosticreport.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition</a></li></ul></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/codesystem-composition-attestation-mode.html">CompositionAttestationMode</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (2 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (11 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 26, warn = 25, info = 23, broken links = 47</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>47</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_Bundle-BundleLabResultReportPOC"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\Bundle-BundleLabResultReportPOC</b></a></td><td><b>0</b></td><td><b>12</b></td><td><b>9</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_DocumentReference-DocumentReferenceMinimal"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\DocumentReference-DocumentReferenceMinimal</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_DocumentReference-DocumentReferenceRefHC"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\DocumentReference-DocumentReferenceRefHC</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_DocumentReference-DocumentReferenceRefInforme"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\DocumentReference-DocumentReferenceRefInforme</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_ImplementationGuide-hcdsns.sns.implementationGuide"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\ImplementationGuide-hcdsns.sns.implementationGuide</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-DocumentReference-minimal-sns"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-DocumentReference-refHC-sns"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-refHC-sns</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-DocumentReference-refInf-sns"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-PatientMinimalSNS"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-PatientMinimalSNS</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-num-ref-incorrectas"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-num-ref-incorrectas</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-patient-flag-oculto"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-patient-flag-oculto</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-patient-operacion"><b>C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-patient-operacion</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.url</b></td><td><b>warning</b></td><td><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="altaAlerta.html#l601">output\altaAlerta&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 334, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, registrar-alerta, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="altaAlerta.html#l685">output\altaAlerta&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 368, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, registrar-alerta, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="altaReclamacion.html#l572">output\altaReclamacion&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 318, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, alta-de-reclamación, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="altaReclamacion.html#l656">output\altaReclamacion&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 352, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, alta-de-reclamación, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultaFlagOculto.html#l578">output\consultaFlagOculto&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 315, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, consultar-flag-oculto, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultaFlagOculto.html#l662">output\consultaFlagOculto&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 349, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, consultar-flag-oculto, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultaRefInformesEU.html#l581">output\consultaRefInformesEU&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 335, column 47</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, openncp-consultar-referencias-informes, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultaRefInformesEU.html#l593">output\consultaRefInformesEU&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 338, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 7)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, openncp-consultar-referencias-informes, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\output\consultaRefInformesEUCU.html#l511">output\consultaRefInformesEUCU&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img at Line 294, column 17</a></b></td><td><b>error</b></td><td><b>The image source 'imagen1.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultarInforme.html#l624">output\consultarInforme&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 331, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 7)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, consultar-informe, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\output\consultarInformeCU.html#l529">output\consultarInformeCU&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img at Line 308, column 17</a></b></td><td><b>error</b></td><td><b>The image source 'imagen2.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultarInformeEU.html#l581">output\consultarInformeEU&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 328, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 7)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, openncp-consultar-informe, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultarRefInformes.html#l620">output\consultarRefInformes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 356, column 47</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, consultar-referencias-informes, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="consultarRefInformes.html#l632">output\consultarRefInformes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 359, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 7)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, consultar-referencias-informes, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\output\consultarRefInformesCU.html#l521">output\consultarRefInformesCU&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/img at Line 302, column 5</a></b></td><td><b>error</b></td><td><b>The image source 'media/image13.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="diagramaSecInf.html#l507">output\diagramaSecInf&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 289, column 54</a></b></td><td><b>error</b></td><td><b>The link 'sequence-pat.html' for &quot;Patient Search page&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="diagramaSecInf.html#l762">output\diagramaSecInf&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/p&#8203;/a at Line 395, column 21</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DocumentReference-minimal-myhealtheu.html' for &quot;DocumentReferenceMyHealthEu&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="diagramaSecPac.html#l754">output\diagramaSecPac&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/strong&#8203;/a at Line 386, column 22</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Patient-minimal-myhealtheu.html' for &quot;PatientMinimalMyHealthEu&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\output\index.html#l657">output\index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img at Line 399, column 14</a></b></td><td><b>error</b></td><td><b>The image source 'assets/images/image5.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l542">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 303, column 32</a></b></td><td><b>error</b></td><td><b>The link '#identificadores' for &quot;identifier&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l558">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 309, column 32</a></b></td><td><b>error</b></td><td><b>The link '#identificadores' for &quot;identifier&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l574">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 315, column 32</a></b></td><td><b>error</b></td><td><b>The link '#identificadores' for &quot;identifier&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l590">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 321, column 32</a></b></td><td><b>error</b></td><td><b>The link '#identificadores' for &quot;identifier&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l624">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 335, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Name extension fathersFamily&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l637">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 342, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Name extension mothersFamily&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l665">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 354, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extension patient-birth-community&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l696">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 367, column 46</a></b></td><td><b>error</b></td><td><b>The link '#identificadores' for &quot;Identifier (CIP)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l736">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 383, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extension patient-adscription-community&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l752">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 390, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extension patient-birth-country&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l784">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 404, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extensión patient-pharmacy-indicator&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l800">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 411, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extension patient-pharmacy-subindicator&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1003">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 491, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extension patient-birth-country&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1034">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 504, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extension patient-nationality&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1279">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 607, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extensión patient-coverage-insurance &quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1295">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 615, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extensión patient-coverage-mgt&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1311">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 622, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extensión patient-coverage-entities&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1327">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 630, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extensión patient-coverage-providers&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1359">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 644, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extensión  patient-coverage-title&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mapeo.html#l1375">output\mapeo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 651, column 32</a></b></td><td><b>error</b></td><td><b>The link '#extensiones' for &quot;Extension patient-coverage-situation&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, mapeos, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="notificacionAccesoModo.html#l575">output\notificacionAccesoModo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 315, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [notificacion-acceso-modo-emergencia, ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="notificacionAccesoModo.html#l659">output\notificacionAccesoModo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 349, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [notificacion-acceso-modo-emergencia, ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="registrarReferencias.html#l659">output\registrarReferencias&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 357, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, registrar-referencia-hc, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="registrarReferencias.html#l743">output\registrarReferencias&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 391, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, registrar-referencia-hc, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="solicitarOperacionVisibilidad.html#l572">output\solicitarOperacionVisibilidad&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 314, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, solicituar-operacion-visibilidad, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="solicitarOperacionVisibilidad.html#l656">output\solicitarOperacionVisibilidad&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 348, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, solicituar-operacion-visibilidad, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="solicitarReferencias.html#l578">output\solicitarReferencias&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 318, column 47</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 6)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, consultar-referencias-hc, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="solicitarReferencias.html#l590">output\solicitarReferencias&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/img&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 321, column 57</a></b></td><td><b>error</b></td><td><b>The link '#referencias' for &quot;(Referencia 7)&quot; cannot be resolved (valid targets: [ig-status, segment-header, top, publish-box, bottom, stripe, segment-footer, segment-post-footer, consultar-referencias-hc, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>IG</b></td><td><b>warning</b></td><td><b>The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_Bundle-BundleLabResultReportPOC"> </a>
+<h2><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(10)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a></li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></li><li>Bundle.entry[8].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Composition&#8203;/4028a0b8-37fc-4491-a8e7-0f28e6fc59b4*&#8203;/&#8203;.type&#8203;.coding[0]&#8203;.display (l31&#8203;/c10)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#11502-2 for language(s) 'es-ES'. The display is 'Laboratory report' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Composition&#8203;/4028a0b8-37fc-4491-a8e7-0f28e6fc59b4*&#8203;/&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l41&#8203;/c12)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#18717-9 for language(s) 'es-ES'. The display is 'Blood bank studies (set)' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Composition&#8203;/4028a0b8-37fc-4491-a8e7-0f28e6fc59b4*&#8203;/&#8203;.section[0]&#8203;.code&#8203;.coding[0]&#8203;.display (l78&#8203;/c14)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#26436-6 for language(s) 'es-ES'. The display is 'Laboratory studies (set)' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Composition&#8203;/4028a0b8-37fc-4491-a8e7-0f28e6fc59b4*&#8203;/&#8203;.meta&#8203;.profile[0] (l18&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Composition-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DiagnosticReport&#8203;/Inline-Diagnostic-Report-lab-report*&#8203;/&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l123&#8203;/c12)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#18717-9 for language(s) 'es-ES'. The display is 'Blood bank studies (set)' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DiagnosticReport&#8203;/Inline-Diagnostic-Report-lab-report*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l133&#8203;/c10)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#11502-2 for language(s) 'es-ES'. The display is 'Laboratory report' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DiagnosticReport&#8203;/Inline-Diagnostic-Report-lab-report*&#8203;/&#8203;.meta&#8203;.profile[0] (l99&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/DiagnosticReport-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Patient&#8203;/a3d70b1b-cd31-4b38-9008-e9b29d2cb769*&#8203;/&#8203;.meta&#8203;.profile[0] (l155&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Patient-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/8bd279af-125a-4318-b461-ba5629b12e7f*&#8203;/&#8203;.category[1]&#8203;.coding[0]&#8203;.display (l225&#8203;/c12)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#18717-9 for language(s) 'es-ES'. The display is 'Blood bank studies (set)' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/8bd279af-125a-4318-b461-ba5629b12e7f*&#8203;/&#8203;.category[1] (l225&#8203;/c12)</b></td><td><b>information</b></td><td><b>!!Ninguno de los codings provistos están en el conjunto de valores 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), y se recomienda que los códigos provengan de este conjunto de valores ) (codes = http://loinc.org#18717-9)</b> <span style="font-size: 8px; font-color: silver">Terminology_TX_NoValid_3_CC</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/8bd279af-125a-4318-b461-ba5629b12e7f*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l235&#8203;/c10)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#883-9 for language(s) 'es-ES'. The display is 'ABO group [Type] in Blood' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/8bd279af-125a-4318-b461-ba5629b12e7f*&#8203;/&#8203;.meta&#8203;.profile[0] (l207&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Observation-resultslab-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*ServiceRequest&#8203;/Inline-ServiceRequest-lab-report*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l284&#8203;/c10)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#883-9 for language(s) 'es-ES'. The display is 'ABO group [Type] in Blood' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*ServiceRequest&#8203;/Inline-ServiceRequest-lab-report*&#8203;/&#8203;.meta&#8203;.profile[0] (l268&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/ServiceRequest-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Organization&#8203;/ce122b36-f942-4cee-8c6d-b13ece8cf23c*&#8203;/&#8203;.meta&#8203;.profile[0] (l305&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Organization-eu-myhealth-eu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*Specimen&#8203;/3c9bd730-3ff9-40ee-9da1-4f3d5c526f13*&#8203;/&#8203;.meta&#8203;.profile[0] (l356&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Specimen-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[7]&#8203;.resource&#8203;/*Practitioner&#8203;/cc181238-0819-402f-9523-681df2c5ba08*&#8203;/&#8203;.meta&#8203;.profile[0] (l379&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Practitioner-eu-myhealth-eu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[8]&#8203;.resource&#8203;/*PractitionerRole&#8203;/8b3a8660-e8a2-4ab8-9766-b9f87fc1186b*&#8203;/&#8203;.meta&#8203;.profile[0] (l400&#8203;/c8)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/PractitionerRole-eu-myhealth-eu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10] (l97/c6)</b></td><td><b>warning</b></td><td><b>Entry 'urn:uuid:f5d20fe5-6d14-46de-80ea-8124f427a754' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)</b> <span style="font-size: 8px; font-color: silver">BUNDLE_BUNDLE_ENTRY_REVERSE_R4</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10] (l266/c6)</b></td><td><b>warning</b></td><td><b>Entry 'urn:uuid:2e861278-2e99-4ffa-befa-049467a095b2' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)</b> <span style="font-size: 8px; font-color: silver">BUNDLE_BUNDLE_ENTRY_REVERSE_R4</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.meta.profile[0] (l1/c2)</b></td><td><b>warning</b></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Bundle-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_DocumentReference-DocumentReferenceMinimal"> </a>
+<h2><a href="DocumentReference-DocumentReferenceMinimal.html">fsh-generated\resources\DocumentReference-DocumentReferenceMinimal.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>DocumentReference: Validated against <i>this.</i><a href="StructureDefinition-DocumentReference-minimal-sns.html">DocumentReference: Minimal</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">DocumentReference.category[0] (l30/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>!!Este elemento no coincide con ninguna partición conocida defined in the profile https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns|1.0.0</b> <span id="sl74" class="flip" onclick="flip('l74')">Show Reasoning</span><div id="l74" style="display: none"><p>&nbsp;</p>!!Este elemento no coincide con ninguna partición conocida definido en el perfil https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns|1.0.0<ul><li>DocumentReference.category[0]: discriminator = true and ($this memberOf 'http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type (l20/c4)</b></td><td><b>warning</b></td><td><b>!!El ValueSet http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType no ha sido encontrado por el validador</b> <span style="font-size: 8px; font-color: silver">Terminology_TX_ValueSet_NotFound</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference&#8203;.type&#8203;.coding[0]&#8203;.system (l20&#8203;/c4)</b></td><td><b>error</b></td><td><b>The Coding references a value set, not a code system ('http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType')</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference&#8203;.category[0]&#8203;.coding[0]&#8203;.system (l30&#8203;/c6)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference&#8203;.subject&#8203;.identifier (l41&#8203;/c6)</b></td><td><b>error</b></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_Identifier_System</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_DocumentReference-DocumentReferenceRefHC"> </a>
+<h2><a href="DocumentReference-DocumentReferenceRefHC.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefHC.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>DocumentReference: Validated against <i>this.</i><a href="StructureDefinition-DocumentReference-refHC-sns.html">DocumentReference: Referencias HC</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>DocumentReference&#8203;.type&#8203;.coding[0]&#8203;.display (l20&#8203;/c4)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#11502-2 for language(s) 'es-ES'. The display is 'Laboratory report' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>DocumentReference&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l30&#8203;/c6)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#18719-5 for language(s) 'es-ES'. The display is 'Chemistry studies (set)' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference&#8203;.subject&#8203;.identifier (l41&#8203;/c6)</b></td><td><b>error</b></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_Identifier_System</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference&#8203;.custodian&#8203;.identifier (l49&#8203;/c6)</b></td><td><b>error</b></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_Identifier_System</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_DocumentReference-DocumentReferenceRefInforme"> </a>
+<h2><a href="DocumentReference-DocumentReferenceRefInforme.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefInforme.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>DocumentReference: Validated against <i>this.</i><a href="StructureDefinition-DocumentReference-refInf-sns.html">DocumentReference: Referencia Informe</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">DocumentReference.category[0] (l30/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>!!Este elemento no coincide con ninguna partición conocida defined in the profile https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns|1.0.0</b> <span id="sl83" class="flip" onclick="flip('l83')">Show Reasoning</span><div id="l83" style="display: none"><p>&nbsp;</p>!!Este elemento no coincide con ninguna partición conocida definido en el perfil https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns|1.0.0<ul><li>DocumentReference.category[0]: discriminator = true and ($this memberOf 'http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DocumentReference.type (l20/c4)</b></td><td><b>warning</b></td><td><b>!!El ValueSet http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType no ha sido encontrado por el validador</b> <span style="font-size: 8px; font-color: silver">Terminology_TX_ValueSet_NotFound</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference&#8203;.type&#8203;.coding[0]&#8203;.system (l20&#8203;/c4)</b></td><td><b>error</b></td><td><b>The Coding references a value set, not a code system ('http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType')</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>DocumentReference&#8203;.category[0]&#8203;.coding[0]&#8203;.display (l30&#8203;/c6)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code http://loinc.org#18719-5 for language(s) 'es-ES'. The display is 'Chemistry studies (set)' the default language display</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference&#8203;.subject&#8203;.identifier (l41&#8203;/c6)</b></td><td><b>error</b></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_Identifier_System</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DocumentReference&#8203;.custodian&#8203;.identifier (l66&#8203;/c6)</b></td><td><b>error</b></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_Identifier_System</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_ImplementationGuide-hcdsns.sns.implementationGuide"> </a>
+<h2><a href="index.html">fsh-generated\resources\ImplementationGuide-hcdsns.sns.implementationGuide.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ImplementationGuide/hcdsns.sns.implementationGuide: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.com&#8203;/fhir&#8203;/example')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\ImplementationGuide-hcdsns.sns.implementationGuide.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/hcdsns.sns.implementationGuide) does not match the URL (http://example.com/fhir/example)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.url</b></td><td><b>error</b></td><td><b>Resource id/url mismatch: hcdsns.sns.implementationGuide/http://example.com/fhir/example</b> <span style="font-size: 8px; font-color: silver">RESOURCE_ID_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\ImplementationGuide-hcdsns&#8203;.sns&#8203;.implementationGuide</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/ImplementationGuide/hcdsns.sns.implementationGuide vs http://example.com/fhir/example</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-DocumentReference-minimal-sns"> </a>
+<h2><a href="StructureDefinition-DocumentReference-minimal-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/DocumentReference-minimal-sns')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/DocumentReference-minimal-sns) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c52020)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span style="font-size: 8px; font-color: silver">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c143889)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c66469)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/StructureDefinition/DocumentReference-minimal-sns vs https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-DocumentReference-refHC-sns"> </a>
+<h2><a href="StructureDefinition-DocumentReference-refHC-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-refHC-sns.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/DocumentReference-refHC-sns')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-refHC-sns.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/DocumentReference-refHC-sns) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refHC-sns)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\StructureDefinition-DocumentReference-refHC-sns</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/StructureDefinition/DocumentReference-refHC-sns vs https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refHC-sns</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-DocumentReference-refInf-sns"> </a>
+<h2><a href="StructureDefinition-DocumentReference-refInf-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/DocumentReference-refInf-sns')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/DocumentReference-refInf-sns) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c148144)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c61326)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/StructureDefinition/DocumentReference-refInf-sns vs https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-PatientMinimalSNS"> </a>
+<h2><a href="StructureDefinition-PatientMinimalSNS.html">fsh-generated\resources\StructureDefinition-PatientMinimalSNS.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/PatientMinimalSNS')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-PatientMinimalSNS.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/PatientMinimalSNS) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/PatientMinimalSNS)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.example[0] (l1&#8203;/c45554)</b></td><td><b>error</b></td><td><b>ElementDefinition.example.label: mínimo requerido = 1, pero sólo se han encontrado 0 (de http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)</b> <span style="font-size: 8px; font-color: silver">Validation_VAL_Profile_Minimum</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.example[0] (l1&#8203;/c92975)</b></td><td><b>error</b></td><td><b>ElementDefinition.example.label: mínimo requerido = 1, pero sólo se han encontrado 0 (de http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)</b> <span style="font-size: 8px; font-color: silver">Validation_VAL_Profile_Minimum</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition (l1/c93218)</b></td><td><b>information</b></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_STATUS_INCONSISTENT_HINT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/PatientMinimalSNS')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\StructureDefinition-PatientMinimalSNS</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/StructureDefinition/PatientMinimalSNS vs https://sns.gob.es/fhir/hcdsns/StructureDefinition/PatientMinimalSNS</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-num-ref-incorrectas"> </a>
+<h2><a href="StructureDefinition-num-ref-incorrectas.html">fsh-generated\resources\StructureDefinition-num-ref-incorrectas.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/num-ref-incorrectas')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-num-ref-incorrectas.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/num-ref-incorrectas) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/num-ref-incorrectas)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition (l1/c16610)</b></td><td><b>information</b></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_STATUS_INCONSISTENT_HINT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/num-ref-incorrectas')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\StructureDefinition-num-ref-incorrectas</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/StructureDefinition/num-ref-incorrectas vs https://sns.gob.es/fhir/hcdsns/StructureDefinition/num-ref-incorrectas</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-patient-flag-oculto"> </a>
+<h2><a href="StructureDefinition-patient-flag-oculto.html">fsh-generated\resources\StructureDefinition-patient-flag-oculto.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/patient-flag-oculto')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-patient-flag-oculto.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/patient-flag-oculto) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-flag-oculto)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition (l1/c16307)</b></td><td><b>information</b></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_STATUS_INCONSISTENT_HINT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/patient-flag-oculto')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\StructureDefinition-patient-flag-oculto</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/StructureDefinition/patient-flag-oculto vs https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-flag-oculto</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__fhir_IGDockerizada_HistoriaClinicaDigitalIG_fsh-generated_resources_StructureDefinition-patient-operacion"> </a>
+<h2><a href="StructureDefinition-patient-operacion.html">fsh-generated\resources\StructureDefinition-patient-operacion.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/patient-operacion')</b></td><td><b>error</b></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-patient-operacion.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/patient-operacion) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-operacion)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition (l1/c16266)</b></td><td><b>information</b></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b> <span style="font-size: 8px; font-color: silver">VALIDATION_VAL_STATUS_INCONSISTENT_HINT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/sns&#8203;.gob&#8203;.es&#8203;/fhir&#8203;/hcdsns&#8203;/StructureDefinition&#8203;/patient-operacion')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\StructureDefinition-patient-operacion</b></td><td><b>error</b></td><td><b>URL Mismatch http://example.com/fhir/example/StructureDefinition/patient-operacion vs https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-operacion</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="BUNDLE_BUNDLE_ENTRY_REVERSE_R4"> </a>
+<h2>BUNDLE_BUNDLE_ENTRY_REVERSE_R4</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>Entry 'urn:uuid:f5d20fe5-6d14-46de-80ea-8124f427a754' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>Entry 'urn:uuid:2e861278-2e99-4ffa-befa-049467a095b2' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-DocumentReference-minimal-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated\resources\ImplementationGuide-hcdsns.sns.implementationGuide.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\ImplementationGuide-hcdsns.sns.implementationGuide.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/hcdsns.sns.implementationGuide) does not match the URL (http://example.com/fhir/example)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DocumentReference-minimal-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/DocumentReference-minimal-sns) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DocumentReference-refHC-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-refHC-sns.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-refHC-sns.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/DocumentReference-refHC-sns) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refHC-sns)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DocumentReference-refInf-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/DocumentReference-refInf-sns) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-PatientMinimalSNS.html">fsh-generated\resources\StructureDefinition-PatientMinimalSNS.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-PatientMinimalSNS.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/PatientMinimalSNS) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/PatientMinimalSNS)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-num-ref-incorrectas.html">fsh-generated\resources\StructureDefinition-num-ref-incorrectas.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-num-ref-incorrectas.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/num-ref-incorrectas) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/num-ref-incorrectas)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-patient-flag-oculto.html">fsh-generated\resources\StructureDefinition-patient-flag-oculto.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-patient-flag-oculto.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/patient-flag-oculto) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-flag-oculto)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-patient-operacion.html">fsh-generated\resources\StructureDefinition-patient-operacion.json</a></td><td><b>Conformance resource C:\fhir\IGDockerizada\HistoriaClinicaDigitalIG\fsh-generated\resources\StructureDefinition-patient-operacion.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/patient-operacion) does not match the URL (https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-operacion)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated\resources\ImplementationGuide-hcdsns.sns.implementationGuide.json</a></td><td><b>Resource id/url mismatch: hcdsns.sns.implementationGuide/http://example.com/fhir/example</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_PATH_SLICING_DEPRECATED"> </a>
+<h2>SD_PATH_SLICING_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-DocumentReference-minimal-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-DocumentReference-minimal-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-minimal-sns.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-DocumentReference-refInf-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-DocumentReference-refInf-sns.html">fsh-generated\resources\StructureDefinition-DocumentReference-refInf-sns.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_3_CC"> </a>
+<h2>Terminology_TX_NoValid_3_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!Ninguno de los codings provistos están en el conjunto de valores 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), y se recomienda que los códigos provengan de este conjunto de valores ) (codes = http://loinc.org#18717-9)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound"> </a>
+<h2>Terminology_TX_ValueSet_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="DocumentReference-DocumentReferenceMinimal.html">fsh-generated\resources\DocumentReference-DocumentReferenceMinimal.json</a></td><td><b>!!El ValueSet http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType no ha sido encontrado por el validador</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="DocumentReference-DocumentReferenceRefInforme.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefInforme.json</a></td><td><b>!!El ValueSet http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType no ha sido encontrado por el validador</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="This_element_does_not_match_any_known_slice_"> </a>
+<h2>This_element_does_not_match_any_known_slice_</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="DocumentReference-DocumentReferenceMinimal.html">fsh-generated\resources\DocumentReference-DocumentReferenceMinimal.json</a></td><td><b>!!Este elemento no coincide con ninguna partición conocida defined in the profile https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="DocumentReference-DocumentReferenceRefInforme.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefInforme.json</a></td><td><b>!!Este elemento no coincide con ninguna partición conocida defined in the profile https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns|1.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_Identifier_System"> </a>
+<h2>Type_Specific_Checks_DT_Identifier_System</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="DocumentReference-DocumentReferenceMinimal.html">fsh-generated\resources\DocumentReference-DocumentReferenceMinimal.json</a></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DocumentReference-DocumentReferenceRefHC.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefHC.json</a></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DocumentReference-DocumentReferenceRefHC.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefHC.json</a></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DocumentReference-DocumentReferenceRefInforme.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefInforme.json</a></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DocumentReference-DocumentReferenceRefInforme.html">fsh-generated\resources\DocumentReference-DocumentReferenceRefInforme.json</a></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="UNKNOWN_CODESYSTEM"> </a>
+<h2>UNKNOWN_CODESYSTEM</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="DocumentReference-DocumentReferenceMinimal.html">fsh-generated\resources\DocumentReference-DocumentReferenceMinimal.json</a></td><td><b>A definition for CodeSystem 'http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"> </a>
+<h2>VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Composition-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/DiagnosticReport-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Patient-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Observation-resultslab-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/ServiceRequest-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Organization-eu-myhealth-eu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Specimen-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Practitioner-eu-myhealth-eu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/PractitionerRole-eu-myhealth-eu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleLabResultReportPOC.html">fsh-generated\resources\Bundle-BundleLabResultReportPOC.json</a></td><td><b>!!La referencia al perfil 'http://fhir.ehdsi.eu/laboratory/StructureDefinition/Bundle-lab-myhealtheu' no ha sido verificada ya que es desconocido, y el validador está configurado para no aceptar perfiles desconocidos</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_STATUS_INCONSISTENT_HINT"> </a>
+<h2>VALIDATION_VAL_STATUS_INCONSISTENT_HINT</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PatientMinimalSNS.html">fsh-generated\resources\StructureDefinition-PatientMinimalSNS.json</a></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-num-ref-incorrectas.html">fsh-generated\resources\StructureDefinition-num-ref-incorrectas.json</a></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-patient-flag-oculto.html">fsh-generated\resources\StructureDefinition-patient-flag-oculto.json</a></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-patient-operacion.html">fsh-generated\resources\StructureDefinition-patient-operacion.json</a></td><td><b>The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-PatientMinimalSNS.html">fsh-generated\resources\StructureDefinition-PatientMinimalSNS.json</a></td><td><b>ElementDefinition.example.label: mínimo requerido = 1, pero sólo se han encontrado 0 (de http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-PatientMinimalSNS.html">fsh-generated\resources\StructureDefinition-PatientMinimalSNS.json</a></td><td><b>ElementDefinition.example.label: mínimo requerido = 1, pero sólo se han encontrado 0 (de http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)</b></td>
+   </tr>
+</table>
+</body>
+</html>

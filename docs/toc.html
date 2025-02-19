@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Table of Contents - Guía de Implementación Historia Clínica Digital (HCDSNS) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"0"}
+    h3,h4,h5,h6{--heading-prefix:"0.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div>
+  <table width="100%">
+    <tr >
+      <td align="center">
+        <img src="assets/images/logoGlobal.png">
+      </td>
+    </tr>
+  </table>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Historia Clínica Digital (HCDSNS)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Introducción</a>
+  </li>
+  <li>
+    <a href="toc.html">Listado de Contenidos</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Diagrama de Secuencia
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="diagramaSecPac.html">Busqueda Paciente</a>
+      </li>
+      <li>
+        <a href="diagramaSecInf.html">Recuperar Informe</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Escenarios
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="registrarReferencias.html">Nacional - Registrar Referencias HC</a>
+      </li>
+      <li>
+        <a href="solicitarReferencias.html">Nacional - Consultar Referencias HC</a>
+      </li>
+      <li>
+        <a href="consultarRefInformes.html">Nacional - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInforme.html">Nacional - Consultar Informe</a>
+      </li>
+      <li>
+        <a href="altaAlerta.html">Nacional - Registrar Alerta</a>
+      </li>
+      <li>
+        <a href="altaReclamacion.html">Nacional - Alta de Reclamación</a>
+      </li>
+      <li>
+        <a href="solicitarOperacionVisibilidad.html">Nacional - Solicitar Operacion Visibilidad</a>
+      </li>
+      <li>
+        <a href="consultaFlagOculto.html">Nacional - Consultar Flag Oculto</a>
+      </li>
+      <li>
+        <a href="notificacionAccesoModo.html">Nacional - Notificacion Acceso Modo Emergencia</a>
+      </li>
+      <li>
+        <a href="consultaRefInformesEU.html">OpenNCP - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeEU.html">OpenNCP - Consultar Informes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementación
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="registrarReferenciasCU.html">Nacional - Registrar Referencia HC</a>
+      </li>
+      <li>
+        <a href="solicitarReferenciasCU.html">Nacional - Consultar Referencias HC</a>
+      </li>
+      <li>
+        <a href="consultarRefInformesCU.html">Nacional - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeCU.html">Nacional - Consultar Informe</a>
+      </li>
+      <li>
+        <a href="altaAlertaCU.html">Nacional - Registrar Alerta</a>
+      </li>
+      <li>
+        <a href="altaReclamacionCU.html">Nacional - Alta de Reclamación</a>
+      </li>
+      <li>
+        <a href="solicitarOperacionVisibilidadCU.html">Nacional - Solicitar Operacion Visibilidad</a>
+      </li>
+      <li>
+        <a href="consultaFlagOcultoCU.html">Nacional - Consultar Flag Oculto</a>
+      </li>
+      <li>
+        <a href="notificacionAccesoModoCU.html">Nacional - Notificacion Acceso Modo Emergencia</a>
+      </li>
+      <li>
+        <a href="consultaRefInformesEUCU.html">OpenNCP - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeEUCU.html">OpenNCP - Consultar Informe</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guías Relacionadas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://fhir.ehdsi.eu/laboratory/index.html">MyHealth@Eu Laboratory Report</a>
+      </li>
+      <li>
+        <a href="https://build-fhir.ehdsi.eu/ncp-api/">MyHealth@Eu NCPeH API</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recursos.html">Diagramas</a>
+      </li>
+      <li>
+        <a href="artifacts.html">Listado</a>
+      </li>
+      <li>
+        <a href="mapeo.html">Mapeos</a>
+      </li>
+      <li>
+        <a href="terminologias.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="seguridad.html">Seguridad</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><b>Table of Contents</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Historia Clínica Digital (HCDSNS) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Table of Contents</h2>
+  
+  
+  
+  <?xml version="1.0" encoding="UTF-8"?><div style="col-12"><table style="border:0px;font-size:11px;font-family:verdana;vertical-align:top;" cellpadding="0" border="0" cellspacing="0"><tbody><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page-child.gif"/><a title="Table of Contents" href="toc.html"> 0 Table of Contents</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&quot;"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Introducción" href="index.html"> 1 Introducción</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!#"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Registrar Referencia HC" href="registrarReferencias.html"> 2 Registrar Referencia HC</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!$"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Referencias HC" href="solicitarReferencias.html"> 3 Consultar Referencias HC</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!%"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Referencias Informes" href="consultarRefInformes.html"> 4 Consultar Referencias Informes</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Informe" href="consultarInforme.html"> 5 Consultar Informe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Registrar Alerta" href="altaAlerta.html"> 6 Registrar Alerta</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!("><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Alta de Reclamación" href="altaReclamacion.html"> 7 Alta de Reclamación</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!)"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Solicituar Operacion Visibilidad" href="solicitarOperacionVisibilidad.html"> 8 Solicituar Operacion Visibilidad</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!*"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Flag Oculto" href="consultaFlagOculto.html"> 9 Consultar Flag Oculto</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!+"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Notificacion Acceso Modo Emergencia" href="notificacionAccesoModo.html"> 10 Notificacion Acceso Modo Emergencia</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!,"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="OpenNCP - Consultar Referencias Informes" href="consultaRefInformesEU.html"> 11 OpenNCP - Consultar Referencias Informes</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!-"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="OpenNCP - Consultar Informe" href="consultarInformeEU.html"> 12 OpenNCP - Consultar Informe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!."><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Registrar Referencia HC" href="registrarReferenciasCU.html"> 13 Registrar Referencia HC</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!/"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Referencias HC" href="solicitarReferenciasCU.html"> 14 Consultar Referencias HC</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!0"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Referencias Informes" href="consultarRefInformesCU.html"> 15 Consultar Referencias Informes</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!1"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Informe" href="consultarInformeCU.html"> 16 Consultar Informe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!2"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Registrar Alerta" href="altaAlertaCU.html"> 17 Registrar Alerta</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!3"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Alta de Reclamación" href="altaReclamacionCU.html"> 18 Alta de Reclamación</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!4"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Solicitar Operacion Visibilidad" href="solicitarOperacionVisibilidadCU.html"> 19 Solicitar Operacion Visibilidad</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!5"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Consultar Flag Oculto" href="consultaFlagOcultoCU.html"> 20 Consultar Flag Oculto</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!6"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Notificacion Acceso Modo Emergencia" href="notificacionAccesoModoCU.html"> 21 Notificacion Acceso Modo Emergencia</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!7"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="OpenNCP - Consultar Referencias Informes" href="consultaRefInformesEUCU.html"> 22 OpenNCP - Consultar Referencias Informes</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!8"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="OpenNCP - Consultar Informe" href="consultarInformeEUCU.html"> 23 OpenNCP - Consultar Informe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!9"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapeos" href="mapeo.html"> 24 Mapeos</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!:"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Terminologías" href="terminologias.html"> 25 Terminologías</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!;"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Seguridad" href="seguridad.html"> 26 Seguridad</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&lt;"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Busqueda de Pacientes" href="diagramaSecPac.html"> 27 Busqueda de Pacientes</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!="><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Recuperar Informe" href="diagramaSecInf.html"> 28 Recuperar Informe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&gt;"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Diagramas" href="recursos.html"> 29 Diagramas</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page-child.gif"/><a title="Artifacts Summary" href="artifacts.html"> 30 Artifacts Summary</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?&quot;"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DocumentReference: Minimal" href="StructureDefinition-DocumentReference-minimal-sns.html"> 30.1 DocumentReference: Minimal</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?#"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DocumentReference: Referencia Informe" href="StructureDefinition-DocumentReference-refInf-sns.html"> 30.2 DocumentReference: Referencia Informe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?$"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DocumentReference: Referencias HC" href="StructureDefinition-DocumentReference-refHC-sns.html"> 30.3 DocumentReference: Referencias HC</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?%"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Paciente Datos Minimos" href="StructureDefinition-PatientMinimalSNS.html"> 30.4 Paciente Datos Minimos</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?&amp;"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Flag Oculto" href="StructureDefinition-patient-flag-oculto.html"> 30.5 Flag Oculto</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?'"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Número Referencias Incorrectas" href="StructureDefinition-num-ref-incorrectas.html"> 30.6 Número Referencias Incorrectas</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?("><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Operacion" href="StructureDefinition-patient-operacion.html"> 30.7 Operacion</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?)"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Bundle: Ejemplo" href="Bundle-BundleLabResultReportPOC.html"> 30.8 Bundle: Ejemplo</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?*"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DocumentReference: Datos Mínimos" href="DocumentReference-DocumentReferenceMinimal.html"> 30.9 DocumentReference: Datos Mínimos</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?+"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DocumentReference: Referencia Informe" href="DocumentReference-DocumentReferenceRefInforme.html"> 30.10 DocumentReference: Referencia Informe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!?,"><td style="vertical-align:top;text-align:left;background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin_end.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DocumentReference: Referencias HC" href="DocumentReference-DocumentReferenceRefHC.html"> 30.11 DocumentReference: Referencias HC</a></td></tr></tbody></table></div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sns.gob.es">SNS</a>.  Package hcdsns.sns.implementationGuide#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2025 13:28+0100">2025-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

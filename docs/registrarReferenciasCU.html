@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Registrar Referencia HC - Guía de Implementación Historia Clínica Digital (HCDSNS) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div>
+  <table width="100%">
+    <tr >
+      <td align="center">
+        <img src="assets/images/logoGlobal.png">
+      </td>
+    </tr>
+  </table>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Historia Clínica Digital (HCDSNS)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Introducción</a>
+  </li>
+  <li>
+    <a href="toc.html">Listado de Contenidos</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Diagrama de Secuencia
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="diagramaSecPac.html">Busqueda Paciente</a>
+      </li>
+      <li>
+        <a href="diagramaSecInf.html">Recuperar Informe</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Escenarios
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="registrarReferencias.html">Nacional - Registrar Referencias HC</a>
+      </li>
+      <li>
+        <a href="solicitarReferencias.html">Nacional - Consultar Referencias HC</a>
+      </li>
+      <li>
+        <a href="consultarRefInformes.html">Nacional - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInforme.html">Nacional - Consultar Informe</a>
+      </li>
+      <li>
+        <a href="altaAlerta.html">Nacional - Registrar Alerta</a>
+      </li>
+      <li>
+        <a href="altaReclamacion.html">Nacional - Alta de Reclamación</a>
+      </li>
+      <li>
+        <a href="solicitarOperacionVisibilidad.html">Nacional - Solicitar Operacion Visibilidad</a>
+      </li>
+      <li>
+        <a href="consultaFlagOculto.html">Nacional - Consultar Flag Oculto</a>
+      </li>
+      <li>
+        <a href="notificacionAccesoModo.html">Nacional - Notificacion Acceso Modo Emergencia</a>
+      </li>
+      <li>
+        <a href="consultaRefInformesEU.html">OpenNCP - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeEU.html">OpenNCP - Consultar Informes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementación
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="registrarReferenciasCU.html">Nacional - Registrar Referencia HC</a>
+      </li>
+      <li>
+        <a href="solicitarReferenciasCU.html">Nacional - Consultar Referencias HC</a>
+      </li>
+      <li>
+        <a href="consultarRefInformesCU.html">Nacional - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeCU.html">Nacional - Consultar Informe</a>
+      </li>
+      <li>
+        <a href="altaAlertaCU.html">Nacional - Registrar Alerta</a>
+      </li>
+      <li>
+        <a href="altaReclamacionCU.html">Nacional - Alta de Reclamación</a>
+      </li>
+      <li>
+        <a href="solicitarOperacionVisibilidadCU.html">Nacional - Solicitar Operacion Visibilidad</a>
+      </li>
+      <li>
+        <a href="consultaFlagOcultoCU.html">Nacional - Consultar Flag Oculto</a>
+      </li>
+      <li>
+        <a href="notificacionAccesoModoCU.html">Nacional - Notificacion Acceso Modo Emergencia</a>
+      </li>
+      <li>
+        <a href="consultaRefInformesEUCU.html">OpenNCP - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeEUCU.html">OpenNCP - Consultar Informe</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guías Relacionadas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://fhir.ehdsi.eu/laboratory/index.html">MyHealth@Eu Laboratory Report</a>
+      </li>
+      <li>
+        <a href="https://build-fhir.ehdsi.eu/ncp-api/">MyHealth@Eu NCPeH API</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recursos.html">Diagramas</a>
+      </li>
+      <li>
+        <a href="artifacts.html">Listado</a>
+      </li>
+      <li>
+        <a href="mapeo.html">Mapeos</a>
+      </li>
+      <li>
+        <a href="terminologias.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="seguridad.html">Seguridad</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Registrar Referencia HC</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación Historia Clínica Digital (HCDSNS) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Registrar Referencia HC</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>En el momento de la creación del primero informe de un ciudadano, la
+Comunidad deberá enviar una notificación de registro de referencia
+indicando en la misma fecha, la fecha de creación del primer documento
+clínico y si contiene documentos ocultos. Solamente deberá enviar
+referencias en este caso, cuando se genere el primer documento clínico
+intercambiable.</p>
+<p><strong>Descripción del Escenario:</strong></p>
+<p>Un profesional sanitario atiende a un paciente en una Comunidad
+Autónoma (CA) que no tiene una historia clínica registrada para dicho
+paciente. Esto desencadena el envío de un registro de referencia desde
+la CA donde se realizó la atención. Dicha solicitud se realiza con un
+recurso <strong>DocumentReference</strong> mediante un método
+<strong>POST</strong>. Se enviará el código de agente o comunidad que
+identifica dónde se ubica la historia clínica del paciente.</p>
+<p>Para una baja de referencia, se utilizará el mismo método, pero
+indicando la operación de Baja en el parámetro correspondiente.</p>
+<p><strong>Ejemplo:</strong></p>
+<p>POST /DocumentReference</p>
+<p>Authorization: [token]</p>
+<p>Content-Type: application/fhir+json</p>
+<ul>
+<li><p><strong>Cuerpo de la Solicitud</strong>:</p></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th><blockquote>
+<p>{</p>
+<p>"resourceType": "DocumentReference",</p>
+<p>"status": "current",</p>
+<p>"extension": [</p>
+</blockquote>
+<p>{</p>
+<p>"url":
+"http://hl7.org/fhir/StructureDefinition/patient-flag-oculto",</p>
+<p>"valueString": "0"</p>
+<p>},</p>
+<p>{</p>
+<p>"url":
+"http://hl7.org/fhir/StructureDefinition/patient-operacion",</p>
+<p>"valueString": "A"</p>
+<p>}</p>
+<p>],</p>
+<p>"subject": {</p>
+<p>"reference": "[base]/fhir/Patient/BBBBBBBBBB009933",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"system": "2.16.724.4.40",</p>
+<p>"value": "BBBBBBBBBB009933"</p>
+<p>},</p>
+<p>{</p>
+<p>"system": "2.16.724.4.41",</p>
+<p>"value": "XXXXXXX"</p>
+<p>}</p>
+<p>]</p>
+<p>},</p>
+<p>"date": "2005-12-24T09:43:41+11:00",</p>
+<p>"custodian": {</p>
+<p>"reference": "[base]/fhir/Organization/20160201",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"value": "20160201"</p>
+<p>}</p>
+<p>],</p>
+<p>“display” : “EXTREMADURA”</p>
+<p>},</p>
+<p>"description": "Alta Referencia HC"</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>{</p>
+<p>"resourceType": "OperationOutcome",</p>
+<p>"issue": [</p>
+<p>{</p>
+<p>"severity": "error",</p>
+<p>"code": "not-found",</p>
+<p>"diagnostics": "Ciudadano no encontrado"</p>
+<p>}</p>
+<p>]</p>
+<p>}</p>
+<blockquote>
+<p><strong>Baja de Referencia</strong></p>
+</blockquote>
+<p>POST /DocumentReference</p>
+<p>Authorization: [token]</p>
+<p>Content-Type: application/fhir+json</p>
+<ul>
+<li><p><strong>Cuerpo de la Solicitud</strong>:</p></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th><blockquote>
+<p>{</p>
+<p>"resourceType": "DocumentReference",</p>
+<p>"status": "current",</p>
+<p>"extension": [</p>
+</blockquote>
+<p>{</p>
+<p>"url":
+"http://hl7.org/fhir/StructureDefinition/patient-flag-oculto",</p>
+<p>"valueString": "0"</p>
+<p>},</p>
+<p>{</p>
+<p>"url":
+"http://hl7.org/fhir/StructureDefinition/patient-operacion",</p>
+<p>"valueString": "B"</p>
+<p>}</p>
+<p>],</p>
+<p>"subject": {</p>
+<p>"reference": "[base]/fhir/Patient/BBBBBXXXXX",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"system": "2.16.724.4.40",</p>
+<p>"value": "BBBBBXXXXX"</p>
+<p>},</p>
+<p>{</p>
+<p>"system": "2.16.724.4.41",</p>
+<p>"value": "XXXXXXX"</p>
+<p>}</p>
+<p>]</p>
+<p>},</p>
+<p>"date": "2005-12-24T09:43:41+11:00",</p>
+<p>"custodian": {</p>
+<p>"reference": "[base]/fhir/Organization/20160201",</p>
+<p>"identifier": [</p>
+<p>{</p>
+<p>"value": "20160201"</p>
+<p>}</p>
+<p>],</p>
+<p>“display” : “EXTREMADURA”</p>
+<p>},</p>
+<p>"description": "Baja Referencia HC"</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Respuesta esperada (Baja)</strong>:</p>
+<ul>
+<li><p><strong>Código de Estado</strong>: 200 OK</p></li>
+<li><p><strong>OperationOutcome</strong>:</p></li>
+</ul></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>{</p>
+<p>"resourceType": "OperationOutcome",</p>
+<p>"issue": [</p>
+<p>{</p>
+<p>"severity": "information",</p>
+<p>"code": "informational",</p>
+<p>"details": {</p>
+<p>"text": "Baja de referencia de historia clínica para el paciente con
+CIP SNS BBBBBXXXXX realizada correctamente."</p>
+<p>}</p>
+<p>}</p>
+<p>]</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Explicación del Resultado:</strong></p>
+</blockquote>
+<ul>
+<li><p><strong>Alta de Referencia</strong>: La CA envía un
+<strong>DocumentReference</strong> para dar de alta una referencia de
+historia clínica para el paciente <strong>BBBBBXXXXX</strong> en una
+comunidad que no tiene su historia clínica registrada. En el cuerpo de
+la solicitud, se incluye el código de la CA donde se encuentra la
+historia clínica.</p></li>
+<li><p><strong>Baja de Referencia</strong>: Si se realiza una baja, se
+utiliza el mismo método anterior, POST, pero en la extensión OPERACIÓN
+se indica B, baja de referencia.</p></li>
+</ul>
+<blockquote>
+<p><strong>Error:</strong></p>
+</blockquote>
+<ul>
+<li><p><strong>Error en Alta</strong>: Problemas de validación de datos
+en la solicitud de alta.</p>
+<ul>
+<li><p><strong>Respuesta del Servidor</strong>:</p></li>
+</ul></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>{</p>
+<p>"resourceType": "OperationOutcome",</p>
+<p>"issue": [</p>
+<p>{</p>
+<p>"severity": "error",</p>
+<p>"code": "invalid",</p>
+<p>"details": {</p>
+<p>"text": "El código de agente/comunidad no es válido o el recurso
+DocumentReference no pudo procesarse correctamente."</p>
+<p>}</p>
+<p>}</p>
+<p>]</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Error en Baja</strong>: Referencia no encontrada en la
+baja.</p>
+<ul>
+<li><p><strong>Respuesta del Servidor</strong>:</p></li>
+</ul></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>{</p>
+<p>"resourceType": "OperationOutcome",</p>
+<p>"issue": [</p>
+<p>{</p>
+<p>"severity": "error",</p>
+<p>"code": "not-found",</p>
+<p>"details": {</p>
+<p>"text": "No se encontró la referencia de historia clínica para el
+paciente con ID SNS12345 en la organización CA123."</p>
+<p>}</p>
+<p>}</p>
+<p>]</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sns.gob.es">SNS</a>.  Package hcdsns.sns.implementationGuide#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2025 13:28+0100">2025-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

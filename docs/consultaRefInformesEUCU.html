@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>OpenNCP - Consultar Referencias Informes - Guía de Implementación Historia Clínica Digital (HCDSNS) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"22"}
+    h3,h4,h5,h6{--heading-prefix:"22"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div>
+  <table width="100%">
+    <tr>
+      <td align="center">
+        <img src="assets/images/logoGlobal.png">
+      
+    
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Historia Clínica Digital (HCDSNS)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4
+
+
+            </span>
+          </p>
+        </div>
+         <!-- /container -->
+        <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Introducción</a>
+  </li>
+  <li>
+    <a href="toc.html">Listado de Contenidos</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Diagrama de Secuencia
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="diagramaSecPac.html">Busqueda Paciente</a>
+      </li>
+      <li>
+        <a href="diagramaSecInf.html">Recuperar Informe</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Escenarios
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="registrarReferencias.html">Nacional - Registrar Referencias HC</a>
+      </li>
+      <li>
+        <a href="solicitarReferencias.html">Nacional - Consultar Referencias HC</a>
+      </li>
+      <li>
+        <a href="consultarRefInformes.html">Nacional - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInforme.html">Nacional - Consultar Informe</a>
+      </li>
+      <li>
+        <a href="altaAlerta.html">Nacional - Registrar Alerta</a>
+      </li>
+      <li>
+        <a href="altaReclamacion.html">Nacional - Alta de Reclamación</a>
+      </li>
+      <li>
+        <a href="solicitarOperacionVisibilidad.html">Nacional - Solicitar Operacion Visibilidad</a>
+      </li>
+      <li>
+        <a href="consultaFlagOculto.html">Nacional - Consultar Flag Oculto</a>
+      </li>
+      <li>
+        <a href="notificacionAccesoModo.html">Nacional - Notificacion Acceso Modo Emergencia</a>
+      </li>
+      <li>
+        <a href="consultaRefInformesEU.html">OpenNCP - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeEU.html">OpenNCP - Consultar Informes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementación
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="registrarReferenciasCU.html">Nacional - Registrar Referencia HC</a>
+      </li>
+      <li>
+        <a href="solicitarReferenciasCU.html">Nacional - Consultar Referencias HC</a>
+      </li>
+      <li>
+        <a href="consultarRefInformesCU.html">Nacional - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeCU.html">Nacional - Consultar Informe</a>
+      </li>
+      <li>
+        <a href="altaAlertaCU.html">Nacional - Registrar Alerta</a>
+      </li>
+      <li>
+        <a href="altaReclamacionCU.html">Nacional - Alta de Reclamación</a>
+      </li>
+      <li>
+        <a href="solicitarOperacionVisibilidadCU.html">Nacional - Solicitar Operacion Visibilidad</a>
+      </li>
+      <li>
+        <a href="consultaFlagOcultoCU.html">Nacional - Consultar Flag Oculto</a>
+      </li>
+      <li>
+        <a href="notificacionAccesoModoCU.html">Nacional - Notificacion Acceso Modo Emergencia</a>
+      </li>
+      <li>
+        <a href="consultaRefInformesEUCU.html">OpenNCP - Consultar Referencias Informes</a>
+      </li>
+      <li>
+        <a href="consultarInformeEUCU.html">OpenNCP - Consultar Informe</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guías Relacionadas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://fhir.ehdsi.eu/laboratory/index.html">MyHealth@Eu Laboratory Report</a>
+      </li>
+      <li>
+        <a href="https://build-fhir.ehdsi.eu/ncp-api/">MyHealth@Eu NCPeH API</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="recursos.html">Diagramas</a>
+      </li>
+      <li>
+        <a href="artifacts.html">Listado</a>
+      </li>
+      <li>
+        <a href="mapeo.html">Mapeos</a>
+      </li>
+      <li>
+        <a href="terminologias.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="seguridad.html">Seguridad</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>OpenNCP - Consultar Referencias Informes</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación Historia Clínica Digital (HCDSNS) - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>OpenNCP - Consultar Referencias Informes</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<p>OpenNCP necesitará ajustarse a la operación ITI-67 del perfil IHE
+MHD, la cual se utiliza para buscar referencias de documentos clínicos
+dentro de un sistema de intercambio de documentos de salud, en este caso
+proporcionado por el módulo HCDSNS. Esta funcionalidad permite que un
+usuario que consume documentos (Document Consumer) solicite referencias
+de documentos al proveedor de documentos (Document Responder),
+utilizando diferentes criterios de búsqueda.</p>
+<p>En los siguientes diagramas se detalla como intervendrá el módulo de
+HCDSNS-BE en los dos escenarios existentes:</p>
+<table><tr><td><a name="l511">​</a><img src="imagen1.png"/></td></tr></table>
+<h3 id="o-hcdsns-3-consulta-de-referencias-de-informes-3">O-HCDSNS-3:
+Consulta de referencias de informes</h3>
+<p>Este servicio permite la consulta y recuperación de referencias de
+documentos clínicos asociados a la historia clínica de un paciente.
+Utilizando el recurso FHIR <strong>DocumentReference</strong> para
+transmitir metadatos sobre los documentos clínicos, este recurso permite
+que los distintos agentes, CCAA, servicios transfronterizos, … accedan a
+las referencias distribuidas de manera centralizada y organizada.</p>
+<p>En un escenario típico, cuando un agente requiere las referencias de
+la historia clínica de un paciente, envía una solicitud a HCDSNS_BE.
+Este recibe una solicitud, consulta las referencias a HC que tiene el
+ciudadano y realiza una búsqueda en todas ellas para recuperar el
+listado de referencias de informes. Cada CA con información responde con
+un bundle de <strong>DocumentReference</strong>, los cuales son
+recopilados por HCDSNS_BE. Posteriormente, consolida todos estos
+<strong>Bundles</strong> en uno solo y lo envía de vuelta al agente
+peticionario, proporcionando al profesional de salud una vista unificada
+y completa de las referencias de la historia clínica del paciente.</p>
+
+<p><strong>Descripción del Escenario:</strong></p>
+<p>Desde otro país europeo un profesional necesita acceder a las
+referencias de documentos clínicos de un paciente que está siendo
+atendido en dicho país, en este caso informes de laboratorio con código
+LOINC: 11502-2, y envía una solicitud al HCDSNS-BE para obtener estos
+<strong>DocumentReferences</strong>.</p>
+<p>Se enviará una petición y en este caso será HCDSNS_BE quien se
+encargue de enviar N mensajes a cada uno de los servicios de salud donde
+el paciente dispone de HC.</p>
+<p><strong>Ejemplo:</strong></p>
+<p>GET
+/DocumentReference?patient=2.16.724.4.40|BBBBBBBBBB009933&amp;type=11502-2</p>
+<p>Authorization: [token]</p>
+<h4 id="hcdsns-be-consolidación-de-referencias-de-documentos-por-el-backend-1">HCDSNS-BE:
+Consolidación de Referencias de Documentos por el Backend</h4>
+<p><strong>Descripción del Escenario:</strong></p>
+<p>HCDSNS_BE envía un mensaje a cada uno de los servicios de salud donde
+el paciente dispone de HC, que previamente se han recuperado mediante la
+consulta de servicios de salud.</p>
+<p>Conforme recibe las respuestas el HCDSNS_BE de cada uno de los
+servicios de salud, los consolida en un único bundle que se devolverá
+como respuesta a la petición original.</p>
+<p><strong>Ejemplo:</strong></p>
+<p>GET
+/DocumentReference?patient=2.16.724.4.40|BBBBBBBBBB009933&amp;type=11502-2&amp;custodian=Organization/20160201</p>
+<p>Authorization: [token]</p>
+<p><strong>Pasos del Proceso</strong>:</p>
+<ol type="1">
+<li><p>El servicio transfronterizo envía una solicitud de referencias de
+documentos del paciente BBBBBBBBBB009933 a HCDSNS-BE.</p></li>
+<li><p>HCDSNS_BE verifica que existen varias referencias en distintas
+CCAA para el paciente solicitado.</p></li>
+<li><p>HCDSNS_BE envía una solicitud de referencias a cada CA que posee
+información sobre el paciente.</p></li>
+<li><p>Cada <strong>CA</strong> con información responde enviando su
+propio bundle de <strong>DocumentReference</strong> a
+HCDSNS-BE.</p></li>
+<li><p>HCDSNS-BE espera recibir todos los bundle, los unifica en un
+único bundle consolidado consolidado y lo envía al servicio
+peticionario.</p></li>
+</ol>
+<h4 id="hcdsns-ca-respuesta-de-la-ca-con-un-bundle-de-referencias-1">HCDSNS-CA:
+Respuesta de la CA con un Bundle de Referencias</h4>
+<p><strong>Descripción del Escenario:</strong></p>
+<p>Una CA recibe una solicitud de referencias de historia clínica de un
+paciente desde HCDSNS-BE. La CA reúne la información disponible en su
+sistema, monta un <strong>Bundle</strong> con las referencias de
+documentos clínicos del paciente y lo envía de vuelta a HCDSNS-BE.</p>
+<p><strong>Ejemplo:</strong></p>
+<ul>
+<li><p><strong>Solicitud de HCDSNS-BE a la CA</strong>:</p></li>
+</ul>
+<p>GET
+/DocumentReference?patient=2.16.724.4.40|BBBBBBBBBB009933&amp;type=11502-2&amp;custodian=Organization/20160201</p>
+<p>Authorization: [token]</p>
+<ul>
+<li><p><strong>Respuesta de la CA</strong>:</p></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr>
+<th><p>{</p>
+<p>"resourceType": "Bundle",</p>
+<p>"type": "collection",</p>
+<p>"entry": [</p>
+<p>{</p>
+<p>"resource": {</p>
+<p>"resourceType": "DocumentReference",</p>
+<p>“status”: “current”,</p>
+<p>“custodian”: “Organization/20160201”,</p>
+<p>"id": "1000000000007",</p>
+<p>“date”: “2017-01-01T00:00:00Z”,</p>
+<p>"subject": {</p>
+<p>"reference": "Patient/BBBBBBBBBB009933",</p>
+<p>"display": "Juan Pérez"</p>
+<p>},</p>
+<p>"content": [</p>
+<p>{</p>
+<p>"attachment": {</p>
+<p>"contentType": "application/fhir+json",</p>
+<p>"url": "/Bundle/<strong>20160201-XXXXXXX</strong>"</p>
+<p>},</p>
+<p>“format”: “JSON”</p>
+<p>}</p>
+<p>]</p>
+<p>}</p>
+<p>}</p>
+<p>]</p>
+<blockquote>
+<p>}</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p><strong>Explicación del Resultado:</strong></p>
+<p>La <strong>CA</strong> envía un <strong>Bundle</strong> con
+referencias de documentos clínicos del paciente BBBBBBBBBB009933 a
+HCDSNS_BE. Este <strong>Bundle</strong> incluye los
+<strong>DocumentReferences</strong> que posee la CA para dicho
+paciente.</p>
+<p>En la url del bundle se incluyen dos partes, por un lado el
+identificador de la CA a la que invocar, y en segundo lugar el
+identificador del bundle.</p>
+<p><strong>Error:</strong></p>
+<ul>
+<li><p><strong>Error</strong>: No se puede encontrar ninguna referencia
+para el paciente solicitado en la CA.</p>
+<ul>
+<li><p><strong>Respuesta del Servidor</strong>:</p></li>
+</ul></li>
+</ul>
+<table border="1">
+<colgroup>
+<col style="width: 100%"/>
+</colgroup>
+<thead>
+<tr>
+<th><p>{</p>
+<p>"resourceType": "OperationOutcome",</p>
+<p>"issue": [</p>
+<p>{</p>
+<p>"severity": "warning",</p>
+<p>"code": "not-found",</p>
+<p>"details": {</p>
+<p>"text": "No se encontraron referencias de historia clínica para el
+paciente con ID SNS12345 en esta CA."</p>
+<p>}</p>
+<p>}</p>
+<p>]</p>
+<p>}</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sns.gob.es">SNS</a>.  Package hcdsns.sns.implementationGuide#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2025 13:28+0100">2025-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</img></td></tr></table></div></div></div></body></html>

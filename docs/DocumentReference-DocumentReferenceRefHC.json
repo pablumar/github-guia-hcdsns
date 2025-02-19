@@ -1,0 +1,54 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "DocumentReferenceRefHC",
+  "meta" : {
+    "profile" : ["https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refHC-sns"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceRefHC</b></p><a name=\"DocumentReferenceRefHC\"> </a><a name=\"hcDocumentReferenceRefHC\"> </a><a name=\"DocumentReferenceRefHC-en-US\"> </a><p><b>masterIdentifier</b>: <code>http://example.org</code>/ba91c64b-f30c-4137-a484-34bbba5e8804</p><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.2.9.2.120.4.4</code>/c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 18719-5}\">Chemistry studies (set)</span></p><p><b>subject</b>: Identifier: <code>2.16.724.4.40</code>/BBBBBBBBBB009931</p><p><b>date</b>: 2022-03-30 11:24:26+0100</p><p><b>custodian</b>: Identifier: <code>www.example.org</code>/210601</p><p><b>description</b>: Informe Prueba Laboratorio</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td>Spanish</td></tr></table></blockquote></div>"
+  },
+  "masterIdentifier" : {
+    "system" : "http://example.org",
+    "value" : "ba91c64b-f30c-4137-a484-34bbba5e8804"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.16.840.1.113883.2.9.2.120.4.4",
+    "value" : "c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju"
+  }],
+  "status" : "current",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "Laboratory report"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "18719-5",
+      "display" : "Chemistry studies (set)"
+    }]
+  }],
+  "subject" : {
+    "identifier" : {
+      "system" : "2.16.724.4.40",
+      "value" : "BBBBBBBBBB009931"
+    }
+  },
+  "date" : "2022-03-30T11:24:26+01:00",
+  "custodian" : {
+    "identifier" : {
+      "system" : "www.example.org",
+      "value" : "210601"
+    }
+  },
+  "description" : "Informe Prueba Laboratorio",
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/fhir+json",
+      "language" : "es"
+    }
+  }]
+}

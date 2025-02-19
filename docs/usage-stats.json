@@ -1,0 +1,107 @@
+{
+  "package": "hcdsns.sns.implementationGuide",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "https://sns.gob.es/fhir/hcdsns/StructureDefinition/num-ref-incorrectas",
+      "title": "Número Referencias Incorrectas",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-flag-oculto",
+      "title": "Flag Oculto",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-operacion",
+      "title": "Operacion",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "DocumentReference": [
+      {
+        "url": "https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns",
+        "title": "DocumentReference: Minimal"
+      },
+      {
+        "url": "https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refHC-sns",
+        "title": "DocumentReference: Referencias HC"
+      },
+      {
+        "url": "https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-refInf-sns",
+        "title": "DocumentReference: Referencia Informe"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://sns.gob.es/fhir/hcdsns/StructureDefinition/PatientMinimalSNS",
+        "title": "Paciente Datos Minimos"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract": [
+      "Bundle.entry.resource.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-flag-oculto": [
+      "DocumentReference"
+    ],
+    "https://sns.gob.es/fhir/hcdsns/StructureDefinition/patient-operacion": [
+      "DocumentReference"
+    ]
+  }
+}

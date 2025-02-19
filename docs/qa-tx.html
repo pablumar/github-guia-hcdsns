@@ -1,0 +1,424 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2><pre>
+
+</pre><hr/>
+<a name="l1"> </a><h3>1</h3>
+<pre>
+Request: 
+
+GET http://tx.fhir.org/r4/metadata?_summary=true HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+User-Agent: fhir/publisher
+
+
+Response (00:00:00.128): 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:2125
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:27:35 GMT
+pragma:no-cache
+server:nginx
+x-request-id:189-133730
+
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/CapabilityStatement/tx","version" : "4.0.1-3.4.46","name" : "FHIRReferenceServer","title" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2025-02-19T12:27:35.477Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server","http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.4.46","releaseDate" : "2025-02-19T01:44:09.530Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"resource" : [{"type" : "CodeSystem","operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup"}]},{"type" : "ValueSet","operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code"},{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"}]}],"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+
+</pre><hr/>
+<a name="l2"> </a><h3>2</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"ImplementationGuide"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.132): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:28:53 GMT
+server:nginx
+x-request-id:189-135001
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l3"> </a><h3>3</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"Composition"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.223): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:28:53 GMT
+server:nginx
+x-request-id:189-135011
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l4"> </a><h3>4</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"DiagnosticReport"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.124): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:16 GMT
+server:nginx
+x-request-id:189-135119
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l5"> </a><h3>5</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"Patient"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.119): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:16 GMT
+server:nginx
+x-request-id:189-135122
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l6"> </a><h3>6</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"Observation"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.123): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:17 GMT
+server:nginx
+x-request-id:189-135126
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l7"> </a><h3>7</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"ServiceRequest"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.114): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:17 GMT
+server:nginx
+x-request-id:189-135132
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l8"> </a><h3>8</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"Organization"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.130): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:18 GMT
+server:nginx
+x-request-id:189-135139
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l9"> </a><h3>9</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"Specimen"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.121): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:18 GMT
+server:nginx
+x-request-id:189-135147
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l10"> </a><h3>10</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"Practitioner"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.116): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:19 GMT
+server:nginx
+x-request-id:189-135157
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l11"> </a><h3>11</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"PractitionerRole"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.117): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:19 GMT
+server:nginx
+x-request-id:189-135166
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l12"> </a><h3>12</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"DocumentReference"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.128): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:20 GMT
+server:nginx
+x-request-id:189-135170
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l13"> </a><h3>13</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"StructureDefinition"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.115): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:20 GMT
+server:nginx
+x-request-id:189-135173
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+
+</pre><hr/>
+<a name="l14"> </a><h3>14</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes","code":"18719-5","display":"Chemistry studies (set)"}},{"name":"displayLanguage","valueString":"es-ES"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.125): 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1651
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:26 GMT
+last-modified:Wed, 19 Feb 2025 12:29:26 GMT
+pragma:no-cache
+server:nginx
+x-request-id:189-135198
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes"},{"name" : "code","valueCode" : "18719-5"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=es-ES, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes#18719-5 (\"Chemistry studies (set)\")]\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes#18719-5\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes\"\r\n"}]}
+
+</pre><hr/>
+<a name="l15"> </a><h3>15</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"Bundle"}},{"name":"displayLanguage","valueString":"en, en-US, en_US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"aa5e6818-af6e-44f1-b607-93e48e74b6c5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.116): 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:379
+content-type:application/fhir+json
+date:Wed, 19 Feb 2025 12:29:41 GMT
+server:nginx
+x-request-id:189-135244
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Invalid displayLanguage: 'en, en-US, en_US'</p></div>"},"issue" : [{"severity" : "error","code" : "processing","details" : {"text" : "Invalid displayLanguage: 'en, en-US, en_US'"},"diagnostics" : "Language \" en_US\": Invalid Language code \"en_US\""}]}
+</pre></head></html>

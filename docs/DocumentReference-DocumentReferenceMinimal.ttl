@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/DocumentReference/DocumentReferenceMinimal> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DocumentReferenceMinimal"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns"^^xsd:anyURI ;
+       fhir:link <https://sns.gob.es/fhir/hcdsns/StructureDefinition/DocumentReference-minimal-sns>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceMinimal</b></p><a name=\"DocumentReferenceMinimal\"> </a><a name=\"hcDocumentReferenceMinimal\"> </a><a name=\"DocumentReferenceMinimal-en-US\"> </a><p><b>masterIdentifier</b>: <code>http://example.org</code>/ba91c64b-f30c-4137-a484-34bbba5e8804</p><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.2.9.2.120.4.4</code>/c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType 11502-2}\">Laboratory report</span></p><p><b>category</b>: <span title=\"Codes:{http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes 18719-5}\">Chemistry studies (set)</span></p><p><b>subject</b>: Identifier: <code>2.16.724.4.40</code>/BBBBBBBBBB009931</p><p><b>date</b>: 2022-03-30 11:24:26+0100</p><p><b>description</b>: Informe Prueba Laboratorio</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Language</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td>Czech</td><td>/bundle/20160201-XXXXXXX</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:masterIdentifier [
+     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ba91c64b-f30c-4137-a484-34bbba5e8804" ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.9.2.120.4.4"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://myhealth.eu/fhir/ncp-api/ValueSet/eHDSILaboratoryReportType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory report" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ehdsi.eu/mvc/eHDSILabStudyTypes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "18719-5" ] ;
+       fhir:display [ fhir:v "Chemistry studies (set)" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "2.16.724.4.40"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "BBBBBBBBBB009931" ]
+     ]
+  ] ; # 
+  fhir:date [ fhir:v "2022-03-30T11:24:26+01:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Informe Prueba Laboratorio"] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/fhir+json" ] ;
+       fhir:language [ fhir:v "cs" ] ;
+       fhir:url [ fhir:v "/bundle/20160201-XXXXXXX"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
