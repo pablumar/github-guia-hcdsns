@@ -1,0 +1,10 @@
+@startuml Resources
+!theme carbon-gray
+
+package Base <<Rectangle>> {
+  class DocumentReference [[StructureDefinition-DocumentReference-minimal-sns.html]]
+  class Patient [[StructureDefinition-PatientMinimalSNS.html]]
+}
+
+DocumentReference --> "1" Patient: subject 
+@enduml
